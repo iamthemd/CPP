@@ -1,0 +1,70 @@
+====================================================== C++ ======================================================
+- Starting name is c with classes.
+- It is basically object oriented programming language, where as c is a structure oriented language.
+- Extention of c is '.cpp'
+
+========================================== DIFFERENCE BETWEEN C AND C++ =========================================
+- C is procedure language and C++ is procedure + Object oriented language.
+- In c importance is givent to step of procedure while in C++ focus on data rather than process.
+- C is function driven and C++ is object driven.
+- OOPS is not in C while it is there in C++. [Abstraction, Encapsulation, Inheritance, Polymorphism]
+- In C++ we can use function inside structure where as in C we can't use function inside structure.
+- NAMESPACE is available in c++ not in C.
+- C++ support exception handling, c is not support exception handling.
+= C++ allows reference variable whereas c doesn't have reference variable concept.
+
+======================================== NAMEMANGLING =======================================================
+- NAMEMANGLING: Namemangling is a technique used by compiler to implement the concept of function overloading.
+For ex: main(){
+		add (10, 30);
+		}
+		
+		void add (int i, int j){ // ---------- function 1
+			-----
+			-----
+		}
+		
+		void add (int a, char b){ // --------- function 2
+			----
+			----
+		}
+		
+So here, compiler internally will assign names to the function like, 
+   for function 1 -> addii 
+   for function 2 -> addic
+   
+================================================= NAMESPACE ====================================================
+- NAMESPACE:Namespace define the scopes and avouds the name collision.
+  For ex: float pi=3.14;
+          float pi=3.14159; // Here, it gives error, because two variable have same name.
+		  main() { 
+			----
+			----
+		}
+		
+		----------
+		namespace PRECISION {
+			float = 3.14159;
+		}
+		float pi=3.14;
+		
+		main() {
+		  std::cout << pi;
+		  std::cout << PRECISION::pi;
+		}
+- Standard c++ library itself is namespace, name of namespace is "std"
+
+================================================ BASIC CONCEPT IN C++ ===========================================
+
+i> Object, Class
+ii> OOPS
+    - Abstractiono
+	- Encapsulation
+	- Inheritance
+	- Polymorphism
+iii> Exception Handling
+iv> File Handling
+
+
+
+		
