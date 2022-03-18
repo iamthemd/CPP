@@ -58,10 +58,66 @@ So here, compiler internally will assign names to the function like,
 
 i> Object, Class
 ii> OOPS
-    - Abstractiono
-	- Encapsulation
-	- Inheritance
-	- Polymorphism
+    - Abstraction:
+	  - Data Abstraction means providing essential details and hiding the background details.
+	  - In C++ Abstraction indicates what data can an object hold and what function can it perform on the data.
+	  - Abstraction refer to an act of representing the essential feature without adding or including background details.
+	  
+	- Encapsulation:
+	  - Encapsulation bind both data and function into a class and keeps them safe from outside function and misuse.
+	  - The data is accessible through the function otherewise it remain hidden from users.
+	  - This helps to maintain data security of the class member.
+	   For ex:
+	  class A{
+		int a;
+		void fun(){
+			std::cout << a;
+		}
+	  };
+	  
+	  void fun1(){
+	  }
+	  
+	  : In above exambple inly fun() have access of data member 'a', fun1() doesn't have access of datamember 'a'.
+			
+	- Inheritance:
+	  - Inheritance is powewrful and important concept of c++.
+	  - Inheritance is a process by which an object inherites he properties of another object belonging to another class.
+	  For ex:
+	  class BANK{ // --------- BASE Class or PARENT class or generalised class contain general information.
+	    datamember
+		------
+		 ---
+		  -
+	  };
+	  
+	  class SAVING: public BANK{ // ---- DERIVED class or CHILD class or specific class contain specific information.
+	    datamember;
+		member function;
+	  };
+	  
+	  No need to implement the same again, we can reuse the existing class properties by inherite that class.
+	  Here DERIVED(SAVING) class Inherits the properties of BASE(BANK) class
+	  - By using this reusability  programmer can add new feature to the existing class without modyfying that class.
+	  
+	- Polymorphism:
+	  - In simple term polymorphism means one name many forms.
+	  - It is ability to access different implementation of member function with the same name.
+	  - There are two types of polymorohism.
+	    i) Compile time polymorphism:
+		  - Which function has bind with which functio defination, that decision is taken at compile time called 
+		    compile time polymorphism or early binding or static binding.
+			ex: Function overloading.
+			    Operator overloading.
+				
+		ii) Runtime polymorphism:
+		  - which function has bind with which function defination that decision is taken at run time called
+		    Runtime polymorphism or late binding or dynamic binding.
+			ex: Virtual function
+			
+		  - Dynamic binding means that the code associate with a given procedure call is not known untill the time of 
+		    the call at run time.
+	  Binding refer to the linking of a procedure call to that code to be executed in responce to the call.
 iii> Exception Handling
 iv> File Handling
 
