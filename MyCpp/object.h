@@ -33,6 +33,8 @@ public:
 	}
 };
 
+int x = 100;
+
 void TestObject() {
 	/*
 	* Every object have separate datamember, but member function arer common to all object.
@@ -56,4 +58,47 @@ void TestObject() {
 	std::cout << "=============Address of obj2 ============ " << std::endl;
 	std::cout << "Address of obj2: " << &obj2 << std::endl;
 	std::cout << "Address of obj2.dataMember1: " << &obj2.dataMember1 << std::endl;
+
+	std::cout << "=============BOOL, STRING, WCHAR_T============ " << std::endl;
+	/*
+	* bool, string,wchar_t(wide character)
+	*/
+	bool b = true; // It represent 1
+	bool c = false; // It represent 0
+	std::cout << "value of bool b:" << b << std::endl;
+	std::cout << "value of bool c:" << c << std::endl;
+
+	wchar_t w = 'a';
+	std::cout << w << std::endl;
+
+	std::string s1 = "MyName";
+	std::string s2 = "MySurname";
+	std::cout << s1 + s2 << std::endl;
+	std::cout << s1.append(s2) << std::endl;
+
+	std::cout << "============= ::(SCOPE RESOLUTION OPERATOR) ============ " << std::endl;
+	int x = 10;
+	std::cout << "Accessing inside x: " << x << std::endl; // First preference local.
+	std::cout << "Accessing outside x: " << ::x << std::endl; // for accessing global require scope operator.
+
+	std::cout << "============= & (REFERENCE VARIABLE) ============ " << std::endl;
+	// Reference variable must be initialized.
+	// int &y; y=x;  <------------- it gives error.
+	int &y = x; // Reference variable declaration and initialisation.
+	std::cout << "Reference var value of y: "<< y << " and value of x:" << x << std::endl;
+	
+	// Redeclaration or reinitialization not possible
+	// int& y = ::x; <-------------- it gives error
+
+	// One reference variable can have multiple reference.
+	int &z = x;
+	std::cout << "Reference var value of y: " << y << " Reference var value of z: " << z << " and value of x:" << x << std::endl;
+
+	// Constant can't be assign to reference.
+	// int &y = 10; <-------------- it gives error.
+	// If we modified the reference it affect to original variable also.
+	y = 234;
+	std::cout << "Reference var value of y: " << y << " Reference var value of z: " << z << " and value of x:" << x << std::endl;
+
+
 }
