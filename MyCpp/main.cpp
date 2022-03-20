@@ -4,5 +4,6 @@
 
 
 int main() {
-	TestObject();
+	//TestObject();
+	//Test_Inline_Default();
 }
