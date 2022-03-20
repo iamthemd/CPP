@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2.Inline.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="2.Inline.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="1.object.h" />
   </ItemGroup>
