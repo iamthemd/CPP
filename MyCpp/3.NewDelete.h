@@ -11,16 +11,16 @@
 *	- new operater compute the size of oject automatically, it return the correct pointer type automatically.
 */
 
-class NewdeleteClass {
+class NewDeleteClass {
 public:
 	int a;
 	int b;
 	float f;
 };
 
-void Test_Newdelete() {
+void Test_NewDelete() {
 	// It allocates the size of int and assign value to 10 at the address where it allocated memory.
-	int* ptr = new int(10); 
+	int* ptr = new int(10);
 	std::cout << "ptr:" << ptr << " value ptr holding:" << *ptr << " size of ptr:" << sizeof(ptr) << "\n";
 	// delete or free the allocated memory.
 	delete ptr;
@@ -39,7 +39,7 @@ void Test_Newdelete() {
 	// It free the allocated array
 	delete [] ptr1;
 
-	NewdeleteClass* ptrclass = new NewdeleteClass();
+	NewDeleteClass* ptrclass = new NewDeleteClass();
 	ptrclass->a = 123;
 	ptrclass->b = 456;
 	ptrclass->f = 1234.56;

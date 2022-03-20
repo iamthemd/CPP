@@ -6,5 +6,5 @@
 int main() {
 	//TestObject();
 	//Test_Inline_Default();
-	Test_Newdelete();
+	//Test_NewDelete();
 }
