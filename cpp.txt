@@ -1,0 +1,126 @@
+====================================================== C++ ======================================================
+- Starting name is c with classes.
+- It is basically object oriented programming language, where as c is a structure oriented language.
+- Extention of c is '.cpp'
+
+========================================== DIFFERENCE BETWEEN C AND C++ =========================================
+- C is procedure language and C++ is procedure + Object oriented language.
+- In c importance is givent to step of procedure while in C++ focus on data rather than process.
+- C is function driven and C++ is object driven.
+- OOPS is not in C while it is there in C++. [Abstraction, Encapsulation, Inheritance, Polymorphism]
+- In C++ we can use function inside structure where as in C we can't use function inside structure.
+- NAMESPACE is available in c++ not in C.
+- C++ support exception handling, c is not support exception handling.
+= C++ allows reference variable whereas c doesn't have reference variable concept.
+
+======================================== NAMEMANGLING =======================================================
+- NAMEMANGLING: Namemangling is a technique used by compiler to implement the concept of function overloading.
+For ex: main(){
+		add (10, 30);
+		}
+		
+		void add (int i, int j){ // ---------- function 1
+			-----
+			-----
+		}
+		
+		void add (int a, char b){ // --------- function 2
+			----
+			----
+		}
+		
+So here, compiler internally will assign names to the function like, 
+   for function 1 -> addii 
+   for function 2 -> addic
+   
+================================================= NAMESPACE ====================================================
+- NAMESPACE:Namespace define the scopes and avouds the name collision.
+  For ex: float pi=3.14;
+          float pi=3.14159; // Here, it gives error, because two variable have same name.
+		  main() { 
+			----
+			----
+		}
+		
+		----------
+		namespace PRECISION {
+			float = 3.14159;
+		}
+		float pi=3.14;
+		
+		main() {
+		  std::cout << pi;
+		  std::cout << PRECISION::pi;
+		}
+- Standard c++ library itself is namespace, name of namespace is "std"
+
+================================================ BASIC CONCEPT IN C++ ===========================================
+
+i> Object, Class
+ii> OOPS
+    - Abstraction:
+	  - Data Abstraction means providing essential details and hiding the background details.
+	  - In C++ Abstraction indicates what data can an object hold and what function can it perform on the data.
+	  - Abstraction refer to an act of representing the essential feature without adding or including background details.
+	  
+	- Encapsulation:
+	  - Encapsulation bind both data and function into a class and keeps them safe from outside function and misuse.
+	  - The data is accessible through the function otherewise it remain hidden from users.
+	  - This helps to maintain data security of the class member.
+	   For ex:
+	  class A{
+		int a;
+		void fun(){
+			std::cout << a;
+		}
+	  };
+	  
+	  void fun1(){
+	  }
+	  
+	  : In above exambple inly fun() have access of data member 'a', fun1() doesn't have access of datamember 'a'.
+			
+	- Inheritance:
+	  - Inheritance is powewrful and important concept of c++.
+	  - Inheritance is a process by which an object inherites he properties of another object belonging to another class.
+	  For ex:
+	  class BANK{ // --------- BASE Class or PARENT class or generalised class contain general information.
+	    datamember
+		------
+		 ---
+		  -
+	  };
+	  
+	  class SAVING: public BANK{ // ---- DERIVED class or CHILD class or specific class contain specific information.
+	    datamember;
+		member function;
+	  };
+	  
+	  No need to implement the same again, we can reuse the existing class properties by inherite that class.
+	  Here DERIVED(SAVING) class Inherits the properties of BASE(BANK) class
+	  - By using this reusability  programmer can add new feature to the existing class without modyfying that class.
+	  
+	- Polymorphism:
+	  - In simple term polymorphism means one name many forms.
+	  - It is ability to access different implementation of member function with the same name.
+	  - There are two types of polymorohism.
+	    i) Compile time polymorphism:
+		  - Which function has bind with which functio defination, that decision is taken at compile time called 
+		    compile time polymorphism or early binding or static binding.
+			ex: Function overloading.
+			    Operator overloading.
+				
+		ii) Runtime polymorphism:
+		  - which function has bind with which function defination that decision is taken at run time called
+		    Runtime polymorphism or late binding or dynamic binding.
+			ex: Virtual function
+			
+		  - Dynamic binding means that the code associate with a given procedure call is not known untill the time of 
+		    the call at run time.
+	  Binding refer to the linking of a procedure call to that code to be executed in responce to the call.
+iii> Exception Handling
+iv> File Handling
+
+
+
+		
