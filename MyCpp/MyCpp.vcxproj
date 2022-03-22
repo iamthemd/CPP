@@ -145,6 +145,7 @@
     <ClInclude Include="2.Inline.h" />
     <ClInclude Include="3.NewDelete.h" />
     <ClInclude Include="constructor.h" />
+    <ClInclude Include="copyConstructor.h" />
     <ClInclude Include="friend.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="1.object.h" />

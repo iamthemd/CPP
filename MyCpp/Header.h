@@ -6,3 +6,4 @@
 #include "constructor.h"
 #include "static.h"
 #include "friend.h"
+#include "copyConstructor.h"
