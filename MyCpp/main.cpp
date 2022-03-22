@@ -9,4 +9,5 @@ int main() {
 	//Test_NewDelete();
 	//Test_Constructor();
 	//Test_Static();
+	//Test_Friend();
 }
