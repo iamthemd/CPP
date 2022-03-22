@@ -6,5 +6,7 @@
 int main() {
 	//TestObject();
 	//Test_Inline_Default();
-	Test_Newdelete();
+	//Test_NewDelete();
+	//Test_Constructor();
+	//Test_Static();
 }
