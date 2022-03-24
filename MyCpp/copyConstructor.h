@@ -1,37 +1,35 @@
 #pragma once
 #include<iostream>
+#include <string>
+
 using namespace std;
 
 class TestCopyConstructor {
-public: int a;
-	  int* ptr;
-	  TestCopyConstructor() {
+	char* ptr;
+public:
+	  TestCopyConstructor(const char* charPtr) {
+		  ptr = new char[strlen(charPtr) + 1];
+		  strcpy(ptr, charPtr);
+	  }
+	  TestCopyConstructor(TestCopyConstructor& copyCtor) {
+		  ptr = new char[strlen(copyCtor.ptr) + 1];
+		  strcpy(ptr, copyCtor.ptr);
+	  }
+	  void changeValue(char a) {
+		   ptr[0] = a;
+	  }
 
-	  }
-	  TestCopyConstructor(TestCopyConstructor& a) {
-		  ptr = new int;
-		  *ptr = *(a.ptr);
-	  }
-	  void setValue(int a) {
-		  ptr = new int();
-		  *ptr = a;
-	  }
-
-	  void changeValue(int a) {
-		  *ptr = a;
-	  }
-	  int getValue() {
-		  return *ptr;
+	  void printVal() {
+		  cout << "value: " << ptr << endl;
 	  }
 };
 
 void Test_shallowCopy() {
-	TestCopyConstructor a1;
-	a1.setValue(1234);
-	cout << "a1.getValue(): " << a1.getValue() << endl;
+	TestCopyConstructor a1("Name");
+	a1.printVal();
 	TestCopyConstructor a2 = a1;
-	a1.changeValue(4444);
-	cout << "a1.getValue(): " << a1.getValue() << endl;
-	cout << "a2.getValue(): " << a2.getValue() << endl;
+	a1.changeValue('M');
+	a1.printVal();
+	a2.printVal();
 
 }
