@@ -86,7 +86,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -145,6 +145,7 @@
     <ClInclude Include="2.Inline.h" />
     <ClInclude Include="3.NewDelete.h" />
     <ClInclude Include="constructor.h" />
+    <ClInclude Include="copyConstructor.h" />
     <ClInclude Include="friend.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="1.object.h" />
