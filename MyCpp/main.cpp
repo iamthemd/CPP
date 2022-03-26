@@ -1,5 +1,3 @@
-#include<iostream>
-
 #include "Header.h"
 
 
@@ -10,5 +8,6 @@ int main() {
 	//Test_Constructor();
 	//Test_Static();
 	//Test_Friend();
-	Test_shallowCopy();
+	//Test_shallowCopy();
+	Test_SingleLinkList();
 }

@@ -18,7 +18,6 @@ public:
 	  void changeValue(char a) {
 		   ptr[0] = a;
 	  }
-
 	  void printVal() {
 		  cout << "value: " << ptr << endl;
 	  }
@@ -31,5 +30,4 @@ void Test_shallowCopy() {
 	a1.changeValue('M');
 	a1.printVal();
 	a2.printVal();
-
 }
