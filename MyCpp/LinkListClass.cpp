@@ -9,6 +9,10 @@ LinkListClass::LinkListClass() {
 	_count = 0;
 }
 
+int LinkListClass::getSizeofLinkList() {
+	return _count;
+}
+
 void LinkListClass::insertAtBegin(int val) {
 	Node* temp = new Node();
 	temp->val = val;
@@ -21,8 +25,7 @@ void LinkListClass::insertAtBegin(int val) {
 	}
 	// If there is no node entry in List or we could say it is the first entry in List.	
 	headPtr = temp;
-	_count++;
-	
+	_count++;	
 }
 
 void LinkListClass::insertAtMiddle(int pos, int val) {
@@ -88,7 +91,6 @@ void LinkListClass::printList() {
 		cout << "There is no entry in LinkList\n";
 	}
 }
-
 
 void Test_SingleLinkList() {
 	cout << "============== Running ===================\n";

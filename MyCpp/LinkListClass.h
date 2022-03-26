@@ -17,7 +17,7 @@ public:
 	void insertAtBegin(int val);
 	void insertAtMiddle(int pos, int val);
 	void insertAtEnd(int val);
-
+	int getSizeofLinkList();
 	void printList();
 private:
 	int _count;
