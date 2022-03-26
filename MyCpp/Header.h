@@ -7,3 +7,5 @@
 #include "static.h"
 #include "friend.h"
 #include "copyConstructor.h"
+
+#include "LinkListClass.h"
