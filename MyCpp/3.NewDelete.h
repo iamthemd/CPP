@@ -42,7 +42,7 @@ void Test_NewDelete() {
 	NewDeleteClass* ptrclass = new NewDeleteClass();
 	ptrclass->a = 123;
 	ptrclass->b = 456;
-	ptrclass->f = 1234.56;
+	ptrclass->f = 1234.5;
 	// size of class you will get 4 0r 8 based on your system, if it is 32 bit it gives you 4 or else 8 for 64 bit OS.
 	// Here you would be wonder why it is giving size 4 0r 8 rathere sum of all datamember, because it is giving the size of 
 	// pointer not the howmuch memory it allocated.

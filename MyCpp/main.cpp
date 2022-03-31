@@ -9,5 +9,13 @@ int main() {
 	//Test_Static();
 	//Test_Friend();
 	//Test_shallowCopy();
-	Test_SingleLinkList();
+	//Test_SingleLinkList();
+
+	// ----------- Programs ------------- //
+	// HelloWorld();
+	// NumberEnteByUser();
+	// QuotientAndRemainder();
+	// swapNumber();
+	// Calculator();
+	CheckNumIsOddOrEven();
 }

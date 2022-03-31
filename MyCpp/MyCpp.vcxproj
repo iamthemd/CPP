@@ -143,8 +143,14 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="1.HelloWorld.h" />
+    <ClInclude Include="2.EnterNumber.h" />
     <ClInclude Include="2.Inline.h" />
     <ClInclude Include="3.NewDelete.h" />
+    <ClInclude Include="3.Quotient_Remainder.h" />
+    <ClInclude Include="4.SwapNumber.h" />
+    <ClInclude Include="5.Calculator.h" />
+    <ClInclude Include="6.EvenOddNum.h" />
     <ClInclude Include="constructor.h" />
     <ClInclude Include="copyConstructor.h" />
     <ClInclude Include="friend.h" />

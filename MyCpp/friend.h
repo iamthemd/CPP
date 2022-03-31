@@ -10,6 +10,10 @@ private:
 	string name;
 
 public:
+	Husband() {
+		salary = 0;
+		name = "";
+	}
 	void setData() {
 		cout << "Enter the name of husband\n";
 		cin >> name;
@@ -32,6 +36,10 @@ private:
 	string name;
 
 public:
+	Wife() {
+		salary = 0;
+		name = "";
+	}
 	void setData() {
 		cout << "Enter the name of wife\n";
 		cin >> name;
