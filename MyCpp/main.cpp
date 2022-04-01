@@ -17,5 +17,7 @@ int main() {
 	// QuotientAndRemainder();
 	// swapNumber();
 	// Calculator();
-	CheckNumIsOddOrEven();
+	// CheckNumIsOddOrEven();
+	// FindTheLargestNumberofThree();
+	RootsOfQuadrantEquation();
 }

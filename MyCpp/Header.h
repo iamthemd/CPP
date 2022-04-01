@@ -18,3 +18,5 @@
 #include "4.SwapNumber.h"
 #include "5.Calculator.h"
 #include "6.EvenOddNum.h"
+#include "7.LargestNumber.h"
+#include "8.RootsOfQuadraticEq.h"
