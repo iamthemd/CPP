@@ -23,5 +23,6 @@ int main() {
 	// SumofNaturalNumber();
 	// IsLeapYear();
 	// Factorial();
-	GenerateMultiplicationTable();
+	// GenerateMultiplicationTable();
+	Test_OperatorOveload();
 }
