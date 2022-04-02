@@ -9,14 +9,18 @@
 #include "copyConstructor.h"
 
 // ---------- DataStructure --------------- //
-#include "LinkListClass.h"
+#include "DataStructure/LinkListClass.h"
 
 // ---------- Programms --------------- //
-#include "1.HelloWorld.h"
-#include "2.EnterNumber.h"
-#include "3.Quotient_Remainder.h"
-#include "4.SwapNumber.h"
-#include "5.Calculator.h"
-#include "6.EvenOddNum.h"
-#include "7.LargestNumber.h"
-#include "8.RootsOfQuadraticEq.h"
+#include "Programs/1.HelloWorld.h"
+#include "Programs/2.EnterNumber.h"
+#include "Programs/3.Quotient_Remainder.h"
+#include "Programs/4.SwapNumber.h"
+#include "Programs/5.Calculator.h"
+#include "Programs/6.EvenOddNum.h"
+#include "Programs/7.LargestNumber.h"
+#include "Programs/8.RootsOfQuadraticEq.h"
+#include "Programs/9.SumOfNatuaralNum.h"
+#include "Programs/10.LeapYear.h"
+#include "Programs/11.Factorial.h"
+#include "Programs/12.MultiplicationTable.h"

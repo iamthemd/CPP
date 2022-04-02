@@ -139,26 +139,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkListClass.cpp" />
+    <ClCompile Include="DataStructure/LinkListClass.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="1.HelloWorld.h" />
-    <ClInclude Include="2.EnterNumber.h" />
-    <ClInclude Include="2.Inline.h" />
-    <ClInclude Include="3.NewDelete.h" />
-    <ClInclude Include="3.Quotient_Remainder.h" />
-    <ClInclude Include="4.SwapNumber.h" />
-    <ClInclude Include="5.Calculator.h" />
-    <ClInclude Include="6.EvenOddNum.h" />
-    <ClInclude Include="7.LargestNumber.h" />
-    <ClInclude Include="8.RootsOfQuadraticEq.h" />
+    <ClInclude Include="Programs/1.HelloWorld.h" />
+    <ClInclude Include="Programs/10.LeapYear.h" />
+    <ClInclude Include="Programs/11.Factorial.h" />
+    <ClInclude Include="Programs/12.MultiplicationTable.h" />
+    <ClInclude Include="Programs/2.EnterNumber.h" />
+    <ClInclude Include="Programs/3.Quotient_Remainder.h" />
+    <ClInclude Include="Programs/4.SwapNumber.h" />
+    <ClInclude Include="Programs/5.Calculator.h" />
+    <ClInclude Include="Programs/6.EvenOddNum.h" />
+    <ClInclude Include="Programs/7.LargestNumber.h" />
+    <ClInclude Include="Programs/8.RootsOfQuadraticEq.h" />
+    <ClInclude Include="Programs/9.SumOfNatuaralNum.h" />
     <ClInclude Include="constructor.h" />
     <ClInclude Include="copyConstructor.h" />
     <ClInclude Include="friend.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="1.object.h" />
-    <ClInclude Include="LinkListClass.h" />
+    <ClInclude Include="2.Inline.h" />
+    <ClInclude Include="3.NewDelete.h" />
+    <ClInclude Include="DataStructure/LinkListClass.h" />
     <ClInclude Include="static.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

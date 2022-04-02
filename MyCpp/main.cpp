@@ -19,5 +19,9 @@ int main() {
 	// Calculator();
 	// CheckNumIsOddOrEven();
 	// FindTheLargestNumberofThree();
-	RootsOfQuadrantEquation();
+	// RootsOfQuadrantEquation();
+	// SumofNaturalNumber();
+	// IsLeapYear();
+	// Factorial();
+	GenerateMultiplicationTable();
 }
