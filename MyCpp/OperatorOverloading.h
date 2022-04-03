@@ -23,7 +23,10 @@ public:
 	void operator ++ (int); // Postfix increment operator
 	void operator -- (int); // Postfix decrement operator
 
-	// Binary operator
+	// Binary operator as membewr function
+	// For overload binary operator as non-member function (friend function) it takes two argument.
+	// because it is non member function
+	// Ex: friend OperatorOverload operator + (const OperatorOverload& left, const OperatorOverload& right)
 	OperatorOverload operator + (const OperatorOverload&);
 	OperatorOverload operator - (const OperatorOverload&);
 	OperatorOverload operator * (const OperatorOverload&);
