@@ -7,7 +7,7 @@
 */
 class OperatorOverload
 {
-private: 
+public: 
 	int value;
 public:
 	// Default Constructor
@@ -33,6 +33,12 @@ public:
 	bool operator == (const OperatorOverload&);
 	bool operator != (const OperatorOverload&);
 
+	/* Why <<, >> operator require friend function to overload.
+	* Because 'cout' and 'cin' are object of ostream and istream class and dones't have access of
+	* private operation or function of that class.
+	*/
+	friend std::ostream& operator << (std::ostream&, const OperatorOverload&);
+	friend std::istream& operator >> (std::istream&, OperatorOverload&);
 };
 
 void Test_OperatorOveload();

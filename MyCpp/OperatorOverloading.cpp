@@ -63,9 +63,19 @@ bool OperatorOverload::operator == (const OperatorOverload& obj) {
 bool OperatorOverload::operator != (const OperatorOverload& obj) {
 	return value != obj.value;
 }
+
+std::ostream& operator << (std::ostream& os, const OperatorOverload& obj) {
+	return os << obj.value;
+}
+
+std::istream& operator >> (std::istream& is, OperatorOverload& obj) {
+	return is >> obj.value;
+}
+
 void OperatorOverload::Printvalue() {
 	std::cout << "Value = " << value << std::endl;
 }
+
 void Test_OperatorOveload() {
 	OperatorOverload obj(10), obj2(5), result;
 	std::cout << "Before preincrement" << std::endl;
@@ -92,5 +102,12 @@ void Test_OperatorOveload() {
 	std::cout << (obj > obj2) << std::endl;
 	std::cout << (obj == obj2) << std::endl;
 	std::cout << (obj != obj2) << std::endl;
+
+	std::cout << "Below result print by overloaded << operator\n";
+	std::cout << result << std::endl;
+	std::cout << "Enter the integer to test Overload >> operator\n";
+	std::cin >> result;
+	std::cout << "Entered result.value is : " << std::endl;
+	std::cout << result;
 }
 
