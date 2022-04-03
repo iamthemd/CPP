@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataStructure/LinkListClass.cpp" />
+    <ClCompile Include="FunctionOverload.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OperatorOverloading.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FunctionOverload.h" />
     <ClInclude Include="OperatorOverloading.h" />
     <ClInclude Include="Programs/1.HelloWorld.h" />
     <ClInclude Include="Programs/10.LeapYear.h" />
