@@ -140,13 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataStructure/LinkListClass.cpp" />
-    <ClCompile Include="FunctionOverload.cpp" />
+    <ClCompile Include="Polymorphism/FunctionOverload.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="OperatorOverloading.cpp" />
+    <ClCompile Include="Polymorphism/OperatorOverloading.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FunctionOverload.h" />
-    <ClInclude Include="OperatorOverloading.h" />
+    <ClInclude Include="Polymorphism/FunctionOverload.h" />
+    <ClInclude Include="Polymorphism/OperatorOverloading.h" />
     <ClInclude Include="Programs/1.HelloWorld.h" />
     <ClInclude Include="Programs/10.LeapYear.h" />
     <ClInclude Include="Programs/11.Factorial.h" />

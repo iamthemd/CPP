@@ -24,5 +24,8 @@ int main() {
 	// IsLeapYear();
 	// Factorial();
 	// GenerateMultiplicationTable();
-	Test_OperatorOveload();
+	
+	// -------------- Polymorphism -------------- //
+	// Test_OperatorOveload();
+	// Test_FunctionOverload();
 }

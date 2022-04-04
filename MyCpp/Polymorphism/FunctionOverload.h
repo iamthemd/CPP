@@ -22,7 +22,5 @@ public:
 	void printValue();
 };
 
-void Test_FunctionOverload() {
-
-}
+void Test_FunctionOverload();
 
