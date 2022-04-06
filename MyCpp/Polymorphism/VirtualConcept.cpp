@@ -60,4 +60,8 @@ void Test_VirtualConcept() {
 	basePtr->fun1_virtual();
 	basePtr->fun2_virtual();
 
+	// Error: Not possible to derve class pointer point to base class object
+	// Because base class doesn't have all information of derived class.
+	//DerivedClass* ptr = new BaseClass();
+	
 }
