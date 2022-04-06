@@ -30,3 +30,5 @@
 #include "Polymorphism/OperatorOverloading.h"
 #include "Polymorphism/FunctionOverride.h"
 #include "Polymorphism/VirtualConcept.h"
+
+#include "Inheritance/Inheritance.h"

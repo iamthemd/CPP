@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataStructure/LinkListClass.cpp" />
+    <ClCompile Include="Inheritance\Inheritance.cpp" />
     <ClCompile Include="Polymorphism/FunctionOverload.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Polymorphism/OperatorOverloading.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="Polymorphism\VirtualConcept.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Inheritance\Inheritance.h" />
     <ClInclude Include="Polymorphism/FunctionOverload.h" />
     <ClInclude Include="Polymorphism/OperatorOverloading.h" />
     <ClInclude Include="Polymorphism\FunctionOverride.h" />
