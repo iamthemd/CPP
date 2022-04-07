@@ -30,8 +30,8 @@ int main() {
 	// Test_FunctionOverload();
 	// Test_FunctionOverride();
 	// Test_VirtualConcept();
-	Test_Inheritnce();
-
+	// Test_Inheritnce();
+	Test_AccessSpecifier();
 
 
 

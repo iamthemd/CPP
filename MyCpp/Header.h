@@ -7,6 +7,7 @@
 #include "static.h"
 #include "friend.h"
 #include "copyConstructor.h"
+#include "AccessSpecifier.h"
 
 // ---------- DataStructure --------------- //
 #include "DataStructure/LinkListClass.h"
