@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccessSpecifier.h" />
+    <ClInclude Include="DataStructure\Node.h" />
     <ClInclude Include="Inheritance\Inheritance.h" />
     <ClInclude Include="Polymorphism/FunctionOverload.h" />
     <ClInclude Include="Polymorphism/OperatorOverloading.h" />

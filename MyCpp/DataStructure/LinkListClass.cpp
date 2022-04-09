@@ -79,6 +79,67 @@ void LinkListClass::insertAtEnd(int val) {
 	_count++;
 }
 
+void LinkListClass::deleteNodeByVal(int val) {
+	if (val < 0 || _count == 0 || headPtr == nullptr) {
+		std::cout << "Failed due to following reason\n";
+		std::cout << "Incorrect value/Linklist is empty\n";
+		return;
+	}
+
+	Node* temp = headPtr;
+	Node* prev = headPtr;
+	Node* deleteNode = nullptr;
+	while (temp != nullptr) {
+		if (temp->val == val)
+			deleteNode = temp;
+			break;
+		prev = temp;
+		temp = temp->nextPtr;
+	}
+	// first node to be delete
+	if (prev == temp) {
+		headPtr = headPtr->nextPtr;
+		delete deleteNode;
+		_count--;
+	}
+	else {
+		prev->nextPtr = temp->nextPtr;
+		delete deleteNode;
+		_count--;
+	}
+}
+
+void LinkListClass::deleteNodeByNo(int Num) {
+	if (Num <= 0 || Num > _count || _count == 0 || headPtr == nullptr) {
+		std::cout << "Failed due to following reason\n";
+		std::cout << "Incorrect Num/Linklist is empty\n";
+		return;
+	}
+	Node* temp = headPtr;
+	Node* prev = headPtr;
+	Node* deleteNode = nullptr;
+	
+	for (int i = 1; i <= Num; i++) {
+		if (i == Num) {
+			deleteNode = temp;
+			break;
+		}
+		prev = temp;
+		temp = temp->nextPtr;
+	}
+	// First node to be deleted
+	if (Num == 1) {
+		headPtr = headPtr->nextPtr;
+		delete deleteNode;
+		_count--;
+	}
+	else {
+		prev->nextPtr = temp->nextPtr;
+		delete deleteNode;
+		_count--;
+	}
+}
+
 void LinkListClass::printList() {
 	if (headPtr != nullptr) {
 		Node* ptr = headPtr;
@@ -104,5 +165,15 @@ void Test_SingleLinkList() {
 	obj.insertAtMiddle(6,6);
 	obj.insertAtMiddle(1, 0);
 	obj.insertAtMiddle(9, 8);
+	obj.printList();
+	cout << "------------ Delting Node by value -------------------\n";
+	obj.deleteNodeByVal(0);
+	obj.deleteNodeByVal(2);
+	obj.deleteNodeByVal(9);
+	obj.printList();
+	cout << "------------ Deleting Node By Number -------------------\n";
+	obj.deleteNodeByNo(1);
+	obj.deleteNodeByNo(3);
+	obj.deleteNodeByNo(7);
 	obj.printList();
 }

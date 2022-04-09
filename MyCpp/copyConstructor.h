@@ -7,20 +7,20 @@ using namespace std;
 class TestCopyConstructor {
 	char* ptr;
 public:
-	  TestCopyConstructor(const char* charPtr) {
-		  ptr = new char[strlen(charPtr) + 1];
-		  strcpy(ptr, charPtr);
-	  }
-	  TestCopyConstructor(TestCopyConstructor& copyCtor) {
-		  ptr = new char[strlen(copyCtor.ptr) + 1];
-		  strcpy(ptr, copyCtor.ptr);
-	  }
-	  void changeValue(char a) {
-		   ptr[0] = a;
-	  }
-	  void printVal() {
-		  cout << "value: " << ptr << endl;
-	  }
+	TestCopyConstructor(const char* charPtr) {
+		ptr = new char[strlen(charPtr) + 1];
+		strcpy(ptr, charPtr);
+	}
+	TestCopyConstructor(TestCopyConstructor& copyCtor) {
+		ptr = new char[strlen(copyCtor.ptr) + 1];
+		strcpy(ptr, copyCtor.ptr);
+	}
+	void changeValue(char a) {
+		ptr[0] = a;
+	}
+	void printVal() {
+		cout << "value: " << ptr << endl;
+	}
 };
 
 void Test_shallowCopy() {
