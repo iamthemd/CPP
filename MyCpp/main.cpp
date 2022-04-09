@@ -34,8 +34,8 @@ int main() {
 	// Test_AccessSpecifier();
 
 	// --------------------------  Data Structure --------------------------  //
-	Test_SingleLinkList();
-
+	//Test_SingleLinkList();
+	Test_DoubleLinkList();
 
 
 

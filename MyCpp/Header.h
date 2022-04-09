@@ -11,6 +11,7 @@
 
 // ---------- DataStructure --------------- //
 #include "DataStructure/LinkListClass.h"
+#include "DataStructure/DoubleLinkList.h"
 
 // ---------- Programms --------------- //
 #include "Programs/1.HelloWorld.h"
