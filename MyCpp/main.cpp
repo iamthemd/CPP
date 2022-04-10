@@ -37,9 +37,12 @@ int main() {
 	//Test_SingleLinkList();
 	// Test_DoubleLinkList();
 
+	// --------------------------  Smart Pointer --------------------------  //
+	Test_SmartPointer();
+	
 	// --------------------------  STL --------------------------  //
 	// Test_STLArray();
-	Test_STLVector();
+	// Test_STLVector();
 
 
 }

@@ -12,6 +12,7 @@
 // ---------- DataStructure --------------- //
 #include "DataStructure/LinkListClass.h"
 #include "DataStructure/DoubleLinkList.h"
+#include "DataStructure/Vector.h"
 
 // ---------- Programms --------------- //
 #include "Programs/1.HelloWorld.h"
@@ -32,5 +33,11 @@
 #include "Polymorphism/OperatorOverloading.h"
 #include "Polymorphism/FunctionOverride.h"
 #include "Polymorphism/VirtualConcept.h"
-
 #include "Inheritance/Inheritance.h"
+
+// -------------- Smart Pointer ------------------ //
+#include "SmartPointer/SmartPtr.h"
+
+// -------------- STL ------------------ //
+#include "STL/STLArray.h"
+#include "STL/STLVector.h"
