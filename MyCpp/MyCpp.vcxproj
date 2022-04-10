@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="DataStructure/LinkListClass.cpp" />
     <ClCompile Include="DataStructure\DoubleLinkList.cpp" />
+    <ClCompile Include="DataStructure\Vector.cpp" />
     <ClCompile Include="Inheritance\Inheritance.cpp" />
     <ClCompile Include="Polymorphism/FunctionOverload.cpp" />
     <ClCompile Include="main.cpp" />
@@ -152,6 +153,7 @@
     <ClInclude Include="AccessSpecifier.h" />
     <ClInclude Include="DataStructure\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\Node.h" />
+    <ClInclude Include="DataStructure\Vector.h" />
     <ClInclude Include="Inheritance\Inheritance.h" />
     <ClInclude Include="Polymorphism/FunctionOverload.h" />
     <ClInclude Include="Polymorphism/OperatorOverloading.h" />
@@ -178,6 +180,8 @@
     <ClInclude Include="3.NewDelete.h" />
     <ClInclude Include="DataStructure/LinkListClass.h" />
     <ClInclude Include="static.h" />
+    <ClInclude Include="STL\STLArray.h" />
+    <ClInclude Include="STL\STLVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
