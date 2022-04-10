@@ -9,6 +9,8 @@ public:
 	void insertAtEnd(int);
 	void insertAtMiddle(int, int);
 
+	void deleteNodeByPos(int);
+	void deleteNodeByVal(int);
 	void printList();
 	int getSizeOfList();
 

@@ -85,6 +85,82 @@ void DoubleLinkList::insertAtMiddle(int pos, int val) {
 	_count++;
 }
 
+void DoubleLinkList::deleteNodeByPos(int pos) {
+	if (pos <= 0 || pos > _count || _count == 0 || _headPtr == nullptr) {
+		std::cout << "Failed due to following reason\n";
+		std::cout << "incorrect position/List is empty\n";
+		return;
+	}
+	// First node tobe deleted
+	if (pos == 1) {
+		DNode* nodeTobeDeleted = _headPtr;
+		_headPtr = _headPtr->nextPtr;
+		_headPtr->prevPtr = nullptr;
+		delete nodeTobeDeleted;
+	}
+	// Last node to be deleted
+	else if (pos == _count) {
+		DNode* temp = _headPtr;
+		while (temp->nextPtr != nullptr) {
+			temp = temp->nextPtr;
+		}
+		temp->prevPtr->nextPtr = nullptr;
+		delete temp;
+	}
+	else {
+		DNode* temp = _headPtr;
+		DNode* prev = _headPtr;
+		int i = 1;
+		while (i != pos) {
+			prev = temp;
+			temp = temp->nextPtr;
+			i++;
+		}
+		DNode* nodeTobeDeleted = temp;
+		prev->nextPtr = temp->nextPtr;
+		temp->nextPtr->prevPtr = prev;
+		delete nodeTobeDeleted;
+	}
+	_count--;
+}
+
+void DoubleLinkList::deleteNodeByVal(int val) {
+	if (val < 0 || _count == 0 || _headPtr == 0) {
+		std::cout << "Failed due to following reason\n";
+		std::cout << "Incorrect value/List iss empty\n";
+		return;
+	}
+
+	DNode* temp = _headPtr;
+	DNode* prev = _headPtr;
+	DNode* nodeTobeDeleted = nullptr;
+	while (temp != nullptr) {
+		if (temp->val == val) {
+			nodeTobeDeleted = temp;
+			break;
+		}
+		prev = temp;
+		temp = temp->nextPtr;
+	}
+	if (nodeTobeDeleted == nullptr) {
+		std::cout << "Node not found!" << std::endl;
+		return;
+	}
+	// first node to be deleted
+	if (prev == temp ) {
+		_headPtr = _headPtr->nextPtr;
+		delete nodeTobeDeleted;
+	}
+	else {
+		prev->nextPtr = nodeTobeDeleted->nextPtr;
+		if(nodeTobeDeleted->nextPtr != nullptr){ // For last not nextPtr will be null
+			nodeTobeDeleted->nextPtr->prevPtr = prev;
+		}
+		delete nodeTobeDeleted;
+	}
+	_count--;
+}
+
 void DoubleLinkList::printList() {
 	if (_headPtr != nullptr){
 		DNode* ptr = _headPtr;
@@ -114,5 +190,15 @@ void Test_DoubleLinkList() {
 	dLinkList.insertAtMiddle(6, 6);
 	dLinkList.insertAtMiddle(1, 0);
 	dLinkList.insertAtMiddle(9, 8);
+	dLinkList.printList();
+	std::cout << "============== Deleting Node by pos ===================\n";
+	dLinkList.deleteNodeByPos(1);
+	dLinkList.deleteNodeByPos(3);
+	dLinkList.deleteNodeByPos(dLinkList.getSizeOfList());
+	dLinkList.printList();
+	std::cout << "============== Deleting Node by Val ===================\n";
+	dLinkList.deleteNodeByVal(1);
+	dLinkList.deleteNodeByVal(2);
+	dLinkList.deleteNodeByVal(7);
 	dLinkList.printList();
 }

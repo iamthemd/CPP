@@ -96,6 +96,10 @@ void LinkListClass::deleteNodeByVal(int val) {
 		prev = temp;
 		temp = temp->nextPtr;
 	}
+	if (deleteNode == nullptr) {
+		std::cout << "Node not found!" << std::endl;
+		return;
+	}
 	// first node to be delete
 	if (prev == temp) {
 		headPtr = headPtr->nextPtr;
