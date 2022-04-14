@@ -1,8 +1,11 @@
 #pragma once
 
-typedef struct Test {
+class Test {
+public:
 	int a;
-}c;
+	Test();
+	~Test();
+};
 
 template <typename T>
 class SmartPtr

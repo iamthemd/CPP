@@ -1,6 +1,14 @@
 #include<iostream>
 #include "SmartPtr.h"
 
+Test::Test() {
+	std::cout << "Test Constructor\n" << std::endl;
+}
+
+Test::~Test() {
+	std::cout << "Test Destructor\n" << std::endl;
+}
+
 template<typename T>
 SmartPtr<T>::SmartPtr(T* p) {
 	if (p == nullptr) {
@@ -37,4 +45,23 @@ void Test_SmartPointer() {
 	SmartPtr<Test> TestPtr(new Test());
 	TestPtr->a = 91;
 	std::cout << TestPtr->a << std::endl;
+
+	// ---------------------- unique_ptr ------------------------------ //
+	// One copy of object exists only
+	// we can transfer the ownership using move semantic, can't copy. that's why it called one ownership.
+	std::unique_ptr<Test> TestUniquePtr(new Test());
+	TestUniquePtr->a = 20;
+
+	std::unique_ptr<Test> TestUniquePtr2;
+	TestUniquePtr2 = std::move(TestUniquePtr);
+	std::cout << TestUniquePtr2->a << std::endl;
+	
+	// ---------------------- shared_ptr ------------------------------ //
+	// Shared the ownership and every share it increase the count of ownership
+	// The object is destroy and memory deallocate only last remaining shared_ptr owning the object is destroyed;
+	std::shared_ptr<Test> TestSharedPtr(new Test());
+	TestSharedPtr->a = 99;
+
+	std::shared_ptr<Test> TestSharedPtr2 = TestSharedPtr;
+	std::cout << "count Ownership: " << TestSharedPtr.use_count() << std::endl;
 }
