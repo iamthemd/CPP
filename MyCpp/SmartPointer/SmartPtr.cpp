@@ -37,6 +37,17 @@ T* SmartPtr<T>::operator->() {
 	return _ptr;
 }
 
+void PassIn(std::unique_ptr<Test> ptr) {
+	std::cout << "PassIN takes Owner ship of TestUniquePtr2\n";
+	std::cout << ptr->a << std::endl;
+}
+
+std::unique_ptr<Test> Passout() {
+	auto ptr = std::make_unique<Test>();
+	ptr->a = 9879;
+	return ptr;
+}
+
 void Test_SmartPointer() {
 	SmartPtr<int> i;
 	*i = 90;
@@ -55,6 +66,23 @@ void Test_SmartPointer() {
 	std::unique_ptr<Test> TestUniquePtr2;
 	TestUniquePtr2 = std::move(TestUniquePtr);
 	std::cout << TestUniquePtr2->a << std::endl;
+	
+	PassIn(std::move(TestUniquePtr2));
+	if (TestUniquePtr2) {
+		std::cout << "TestUniquePtr2: is not Mpty\n";
+	}
+	else {
+		std::cout << "TestUniquePtr2: is Mpty!\n";
+	}
+
+	TestUniquePtr2 = Passout();
+	if (TestUniquePtr2) {
+		std::cout << "TestUniquePtr2: is not Mpty\n";
+		std::cout << "Value of member a of TestUniquePtr2 is : " << TestUniquePtr2->a << std::endl;
+	}
+	else {
+		std::cout << "TestUniquePtr2: is Mpty!\n";
+	}
 	
 	// ---------------------- shared_ptr ------------------------------ //
 	// Shared the ownership and every share it increase the count of ownership

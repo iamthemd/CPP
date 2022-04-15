@@ -17,13 +17,13 @@ int main() {
 	// Factorial();
 	// GenerateMultiplicationTable();
 	
-	//TestObject();
-	//Test_Inline_Default();
-	//Test_NewDelete();
-	//Test_Constructor();
-	//Test_Static();
-	//Test_Friend();
-	//Test_shallowCopy();
+	// TestObject();
+	// Test_Inline_Default();
+	// Test_NewDelete();
+	// Test_Constructor();
+	// Test_Static();
+	// Test_Friend();
+	// Test_shallowCopy();
 	
 	// ------------------ Inheritance & Polymorphism -------------------- //
 	// Test_OperatorOveload();
@@ -34,12 +34,12 @@ int main() {
 	// Test_AccessSpecifier();
 
 	// --------------------------  Data Structure --------------------------  //
-	//Test_SingleLinkList();
+	// Test_SingleLinkList();
 	// Test_DoubleLinkList();
 
 	// --------------------------  Smart Pointer --------------------------  //
-	Test_SmartPointer();
-	
+	// Test_SmartPointer();
+	Test_ExplicitConstructor();
 	// --------------------------  STL --------------------------  //
 	// Test_STLArray();
 	// Test_STLVector();
