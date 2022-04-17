@@ -38,6 +38,7 @@
 // -------------- Smart Pointer ------------------ //
 #include "SmartPointer/SmartPtr.h"
 #include "SmartPointer/ExplicitConstructor.h"
+#include "SmartPointer/SharedPtrTest.h"
 
 // -------------- STL ------------------ //
 #include "STL/STLArray.h"

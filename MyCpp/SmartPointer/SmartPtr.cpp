@@ -89,7 +89,15 @@ void Test_SmartPointer() {
 	// The object is destroy and memory deallocate only last remaining shared_ptr owning the object is destroyed;
 	std::shared_ptr<Test> TestSharedPtr(new Test());
 	TestSharedPtr->a = 99;
-
+	{
 	std::shared_ptr<Test> TestSharedPtr2 = TestSharedPtr;
+	TestSharedPtr2->a = 9;
 	std::cout << "count Ownership: " << TestSharedPtr.use_count() << std::endl;
+	std::cout << "TestSharedPtr->a: " << TestSharedPtr->a << std::endl;
+	std::cout << "TestSharedPtr2->a: " << TestSharedPtr2->a << std::endl;
+	}
+
+	std::cout << "count Ownership: " << TestSharedPtr.use_count() << std::endl;
+	std::cout << "TestSharedPtr->a: " << TestSharedPtr->a << std::endl;
+
 }
