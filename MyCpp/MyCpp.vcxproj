@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataStructure/LinkListClass.cpp" />
+    <ClCompile Include="DataStructure\Array.cpp" />
     <ClCompile Include="DataStructure\DoubleLinkList.cpp" />
     <ClCompile Include="DataStructure\Vector.cpp" />
     <ClCompile Include="SmartPointer\ExplicitConstructor.cpp" />
@@ -154,6 +155,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccessSpecifier.h" />
+    <ClInclude Include="DataStructure\array.h" />
+    <ClInclude Include="DataStructure\Bitset.h" />
     <ClInclude Include="DataStructure\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\Node.h" />
     <ClInclude Include="DataStructure\Vector.h" />
@@ -188,6 +191,9 @@
     <ClInclude Include="static.h" />
     <ClInclude Include="STL\STLArray.h" />
     <ClInclude Include="STL\STLVector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DataStructure\STL.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

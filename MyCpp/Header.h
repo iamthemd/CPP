@@ -13,6 +13,8 @@
 #include "DataStructure/LinkListClass.h"
 #include "DataStructure/DoubleLinkList.h"
 #include "DataStructure/Vector.h"
+#include "DataStructure/array.h"
+#include "DataStructure/Bitset.h"
 
 // ---------- Programms --------------- //
 #include "Programs/1.HelloWorld.h"

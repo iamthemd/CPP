@@ -34,13 +34,14 @@ int main() {
 	// Test_AccessSpecifier();
 
 	// --------------------------  Data Structure --------------------------  //
-	// Test_SingleLinkList();
+	// QTest_SingleLinkList();
 	// Test_DoubleLinkList();
-
+	// Test_StaticArray();
+	Test_Bitset();
 	// --------------------------  Smart Pointer --------------------------  //
 	// Test_SmartPointer();
-	//Test_ExplicitConstructor();
-	Test_SharedPtrCyclicDependancy();
+	// Test_ExplicitConstructor();
+	// Test_SharedPtrCyclicDependancy();
 	
 	// --------------------------  STL --------------------------  //
 	// Test_STLArray();
