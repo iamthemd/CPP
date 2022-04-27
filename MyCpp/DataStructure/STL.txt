@@ -1,0 +1,28 @@
+STL: Standard Template Library
+- STL is colection of C++ template classes for common programming data structure such as
+  list, stack, array etc.
+- It is container library with	algorithm, iterator and container classes.
+- Using STL in c++ makes code more expressive, simpler and easy to understand.
+
+STL Component:
+	- Algorithm : Algortithms are function that are applied on container and provide an operaton
+	              for the container's contents.
+				: Typees of algorithms in STL
+				  - Searching
+				  - Sorting
+				  - Numeric
+				  - Modyfying and Non-Modyfying
+	- Container : Containers are object that are used to store the information
+				- Seqeunce Container : Arrays, Vector, List, Dequeue 
+				- Associative Container: Set, Multiset, Map, Multimap
+				- Unorder associative container: Unordered_set,Unordered_multiset, Unordered_map, Unordered_multimap
+				- Container Adaptor: Stack, Queue, Priority_queue
+	- Iterator : Iterator are used to point to addresses in STL container.
+				 the most commonly used iterator operations are begin(), end(), advance(), next() and prev().
+			Types of Iterator:
+			- Input Iterator
+			- Output Iterator
+			- Random-access Iterator
+			- Forward Iterator
+			- Bidirectional Iterator
+	- Function : STL includes classes that overload the function call operator(). Instance of these classes are called functor.

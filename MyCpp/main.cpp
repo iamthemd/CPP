@@ -37,7 +37,7 @@ int main() {
 	// QTest_SingleLinkList();
 	// Test_DoubleLinkList();
 	// Test_StaticArray();
-	Test_Bitset();
+
 	// --------------------------  Smart Pointer --------------------------  //
 	// Test_SmartPointer();
 	// Test_ExplicitConstructor();
@@ -45,7 +45,9 @@ int main() {
 	
 	// --------------------------  STL --------------------------  //
 	// Test_STLArray();
+	Test_STLArray1();
 	// Test_STLVector();
-		
+	// Test_Bitset();
+
 
 }

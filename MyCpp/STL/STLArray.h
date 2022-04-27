@@ -4,7 +4,7 @@
 
 /* std::array<T, size_t> : It is Fixed size sequence containter. it holds fixed size in linear	sequence.
 * - It can't grow or shrink.
-* - Zero sized array is valid, but it should not be derefereced. 
+* - Zero sized array is valid, but it should not be dereferenced.
 */
 
 void Test_STLArray() {
@@ -43,5 +43,58 @@ void Test_STLArray() {
 	for (auto itr = stl_array.begin(); itr != stl_array.end(); itr++) {
 		std::cout << *itr << std::endl;
 	}
+}
+
+void Test_STLArray1() {
+	std::array<int, 5> STL_array;
+	STL_array.fill(0);
+	for(int i=0; i<5; i++){
+		std::cout << STL_array[i] << " ";
+	}
+	std::cout << std::endl;
+	unsigned int item, count = 0;
+
+	while (1) {
+		std::cout << "Implementation of STL Array\n";
+		std::cout << "0. Size of an Array\n";
+		std::cout << "1. Insert element\n";
+		std::cout << "2. Front element of array\n";
+		std::cout << "3. Back element of array\n";
+		std::cout << "4. Display element of array\n";
+		std::cout << "5. Exit\n";
+		cin >> item;
+		switch (item) {
+		case 0:
+			std::cout << "Size of an Array: " << STL_array.size() << std::endl;
+			break;
+		case 1:
+			std::cout << "Enter the element\n";
+			if (count >= STL_array.size()) {
+				std::cout << "Array is full\n";
+				break;
+			}
+			int element;
+			cin >> element;
+			STL_array.at(count++) = element;
+			break;
+		case 2:
+			std::cout << "Front element of an Array: " << STL_array.front()<< std::endl;
+			break;
+		case 3:
+			std::cout << "Back element of an Array: " << STL_array.back()<< std::endl;
+			break;
+		case 4:
+			for (auto itr = STL_array.begin(); itr != STL_array.end(); itr++) {
+				cout << " " << *itr;
+			}
+			break;
+		case 5:
+			exit(1);
+			break;
+		default:
+			std::cout << "Wrong choice\n";
+		}
+	}
+
 }
 
