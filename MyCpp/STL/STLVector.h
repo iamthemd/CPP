@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include <vector>
+#include <algorithm>
 
 /*- Just like Array vector is also a contigous storage location for their element. So element also can be access using offset.
 * - vector size can change dynamically. it is not like array.
@@ -51,3 +52,23 @@ void Test_STLVector() {
 
 }
 
+void Test_STLVector1() {
+	std::cout << "STL vector \n";
+	std::vector<std::string> strVector;
+	strVector.push_back("Hey");
+	strVector.push_back("I");
+	strVector.push_back("Am");
+	strVector.push_back("The");
+	strVector.push_back("MD!");
+
+	for (auto itr = strVector.begin(); itr != strVector.end(); itr++) {
+		std::cout << *itr << " ";
+	}
+	std::cout << "\n";
+
+	sort(strVector.begin(), strVector.end());
+	std::cout << "After Sorting Vector\n";
+	for (auto itr = strVector.begin(); itr != strVector.end(); itr++) {
+		std::cout << *itr << " ";
+	}
+}
