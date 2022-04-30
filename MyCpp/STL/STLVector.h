@@ -10,6 +10,17 @@
 * - That's why vecor container allocate extra storage to accomodate possible grow.
 * - compare to array vector consume more memory.
 */
+
+/*
+* 1. In vector all element remain same order in which they are inserted.
+* 2. Indexing is very fast in vector using []operator.
+* 3. It perform better in insertion/deletion at the end and gives worst performance at the middle or start.
+* 4. It always stores the copy of object not the same reference. So if we are adding object of 
+     user define class then we should define copy constructor and assignment operator overload.
+* why use vector? : std::vector gives same kind of performance in indexing and iteration as arrays.
+* But it don't have limitation like arrays. We no need to provide fixed size for vector in advanced.
+* It will automatically expance the size.
+*/
 void Test_STLVector() {
 	std::vector<int> vector_Obj(8);
 	std::cout << "Capacity: " << vector_Obj.capacity() << std::endl;

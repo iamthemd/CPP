@@ -190,6 +190,7 @@
     <ClInclude Include="SmartPointer\SmartPtr.h" />
     <ClInclude Include="static.h" />
     <ClInclude Include="STL\STLArray.h" />
+    <ClInclude Include="STL\STLDequeue.h" />
     <ClInclude Include="STL\STLVector.h" />
   </ItemGroup>
   <ItemGroup>
