@@ -10,7 +10,8 @@
 void Test_STLArray() {
 	// std::array<int, 0> zeroSized_array;
 	// std::cout << "ZeroSized array dereferenced: " << *(zeroSized_array.begin()) << std::endl;
-	std::array<int, 10> stl_array;
+	// wwe can assign during declaration as well
+	std::array<int, 10> stl_array;  //std::array<int, 2> stl_array = {1,2} (initialize with bracketc++ 17)
 	for (int i = 0; i < 7; i++) {
 		stl_array[i] = i + 1;
 	}
@@ -39,10 +40,14 @@ void Test_STLArray() {
 	}
 
 	std::array<int, 10> swap_array{3,3,3,3,3,3,3,3,3,3};
+	swap_array.fill(4); // it fill 4 for every element
 	stl_array.swap(swap_array);
 	for (auto itr = stl_array.begin(); itr != stl_array.end(); itr++) {
 		std::cout << *itr << std::endl;
 	}
+
+	std::cout << "Swap_Array.size:" << swap_array.size() << std::endl;
+	std::cout << "Swap_Array.maxSize: " << swap_array.max_size() << std::endl;
 }
 
 void Test_STLArray1() {
