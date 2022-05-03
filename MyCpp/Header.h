@@ -45,3 +45,5 @@
 // -------------- STL ------------------ //
 #include "STL/STLArray.h"
 #include "STL/STLVector.h"
+#include "STL/Pair.h"
+#include "STL/Tuple.h"

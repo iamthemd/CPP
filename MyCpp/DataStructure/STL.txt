@@ -7,22 +7,48 @@ STL: Standard Template Library
 STL Component:
 	- Algorithm : Algortithms are function that are applied on container and provide an operaton
 	              for the container's contents.
+				: STL provide number of algorithms that can be used of any container, irresepctive of
+				  their type. Algorithms ibrary contain built in function that can performs complex
+				  algorithms on the data structure.
+				: For ex: once can reverse a range with reverse(), sort a range with sort(), search in
+				  range with binary_search() and so on.
 				: Typees of algorithms in STL
 				  - Searching
 				  - Sorting
 				  - Numeric
 				  - Modyfying and Non-Modyfying
-	- Container : Containers are object that are used to store the information
+	- Container : Containers are object that are used to store the information.
+				: Containes library provide the containers that are used to create data structure like
+				  array, linklist, map etc.
+				: Container are generic, they can hold any type of data.
 				- Seqeunce Container : Arrays, Vector, List, Dequeue 
 				- Associative Container: Set, Multiset, Map, Multimap
 				- Unorder associative container: Unordered_set,Unordered_multiset, Unordered_map, Unordered_multimap
 				- Container Adaptor: Stack, Queue, Priority_queue
-	- Iterator : Iterator are used to point to addresses in STL container.
+	- Iterator : Iterators are used to point to addresses in STL container.
 				 the most commonly used iterator operations are begin(), end(), advance(), next() and prev().
-			Types of Iterator:
-			- Input Iterator
-			- Output Iterator
-			- Random-access Iterator
-			- Forward Iterator
-			- Bidirectional Iterator
+			   : Iterators in STL are used to point to the containers. Iterator actually acts as a bridge
+			     between containers and algorithms.
+				Types of Iterator:
+				- Input Iterator
+				- Output Iterator
+				- Random-access Iterator
+				- Forward Iterator
+				- Bidirectional Iterator
 	- Function : STL includes classes that overload the function call operator(). Instance of these classes are called functor.
+
+* What are the containers in STL?
+  Following are some of common container:
+  - vector : replicates array but dynamic.
+  - queue : repicates queue.
+  - stack : replicates stack.
+  - priority_queue : replicates heap.
+  - list : replicates double link list.
+  - set : replicates tree.
+  - map : associative arrays.
+
+  PAIR and TUPLE Template:
+  Although pair and tuple are not part of the container but they are very commonly required 
+  and they make certain things very easy to implement.
+
+  Syntax: pair<T1, T2> pair1, pair2;

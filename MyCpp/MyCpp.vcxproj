@@ -189,9 +189,11 @@
     <ClInclude Include="SmartPointer\SharedPtrTest.h" />
     <ClInclude Include="SmartPointer\SmartPtr.h" />
     <ClInclude Include="static.h" />
+    <ClInclude Include="STL\Pair.h" />
     <ClInclude Include="STL\STLArray.h" />
     <ClInclude Include="STL\STLDequeue.h" />
     <ClInclude Include="STL\STLVector.h" />
+    <ClInclude Include="STL\Tuple.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="DataStructure\STL.txt" />
