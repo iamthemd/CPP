@@ -19,7 +19,7 @@
      user define class then we should define copy constructor and assignment operator overload.
 * why use vector? : std::vector gives same kind of performance in indexing and iteration as arrays.
 * But it don't have limitation like arrays. We no need to provide fixed size for vector in advanced.
-* It will automatically expance the size.
+* It will automatically expande the size.
 */
 void Test_STLVector() {
 	std::vector<int> vector_Obj(8);
@@ -49,8 +49,8 @@ void Test_STLVector() {
 	}
 
 	std::cout << "--------------- Resizing vector ---------------------\n";
-	//vector_Obj.resize(14);
-	//vector_Obj.shrink_to_fit();
+	vector_Obj.resize(14);
+	vector_Obj.shrink_to_fit();
 
 	std::cout << "---------------- Vector Properties ----------------\n";
 	std::cout << "Capacity: " << vector_Obj.capacity() << std::endl;
@@ -61,6 +61,15 @@ void Test_STLVector() {
 	std::cout << "Capacity: " << vector_Obj.capacity() << std::endl;
 	std::cout << "Size: " << vector_Obj.size() << std::endl;
 
+	std::vector<int> vector2(vector_Obj.begin(), vector_Obj.end());
+	for (auto itr = vector2.begin(); itr != vector2.end(); itr++) {
+		std::cout << *itr << std::endl;
+	}
+
+	std::vector<int> vector3(10, 3);
+	for (auto itr = vector3.begin(); itr != vector3.end(); itr++) {
+		std::cout << *itr << std::endl;
+	}
 }
 
 void Test_STLVector1() {
@@ -82,4 +91,23 @@ void Test_STLVector1() {
 	for (auto itr = strVector.begin(); itr != strVector.end(); itr++) {
 		std::cout << *itr << " ";
 	}
+
+	strVector.insert(strVector.begin(), 2, "Ha ");
+	std::cout << "After inserting element at begin in Vector\n";
+	for (auto itr = strVector.begin(); itr != strVector.end(); itr++) {
+		std::cout << *itr << " ";
+	}
+	
+	strVector.erase(strVector.begin());
+	std::cout << "After Removing first element from the	Vector\n";
+	for (auto itr = strVector.begin(); itr != strVector.end(); itr++) {
+		std::cout << *itr << " ";
+	}
+
+	strVector.clear();
+	std::cout << "After Clearing the Vector\n";
+	for (auto itr = strVector.begin(); itr != strVector.end(); itr++) {
+		std::cout << *itr << " ";
+	}
+	std::cout << "------------------- End ------------------- \n";
 }
