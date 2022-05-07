@@ -44,3 +44,59 @@ void Test_STLMap() {
 	}
 	std::cout << "\n";
 }
+
+class KEY {
+public:
+	int id;
+	KEY(int i): id(i){}
+	bool operator < (const KEY& a1) const {
+		return (this->id >  a1.id);
+	}
+};
+
+/* Key as used defined data type
+*/
+void Test_STLMap1() {
+	std::map<KEY, int> stlMapObj;
+	KEY a = { 2 };
+	KEY b = { 3 };
+	KEY c = { 1 };
+	KEY d = { 4 };
+	stlMapObj.insert(std::pair<KEY, int>(d,4));
+	stlMapObj[b] = 3;
+	stlMapObj[a] = 1;
+	stlMapObj[c] = 2;
+
+	for (auto itr = stlMapObj.begin(); itr != stlMapObj.end(); itr++) {
+		cout << "Key : " << itr->first.id << " Value: " << itr->second << std::endl;
+	}
+}
+
+/* Sort map based on value
+*/
+
+bool cmp(std::pair<KEY, int>& lhs, std::pair<KEY, int>& rhs) {
+	return lhs.second < rhs.second;
+}
+
+void Test_STLMap2() {
+	std::map<KEY, int> stlMapObj;
+	KEY a = { 2 };
+	KEY b = { 3 };
+	KEY c = { 1 };
+	KEY d = { 4 };
+	stlMapObj.insert(std::pair<KEY, int>(d, 4));
+	stlMapObj[b] = 3;
+	stlMapObj[a] = 1;
+	stlMapObj[c] = 2;
+	std::vector<pair<KEY, int>> vec;
+	for (auto& it : stlMapObj) {
+		vec.push_back(it);
+	}
+	std::sort(vec.begin(), vec.end(), cmp);
+
+	for (auto itr = vec.begin(); itr != vec.end(); itr++) {
+		cout << "Key : " << itr->first.id << " Value: " << itr->second << std::endl;
+	}
+
+}

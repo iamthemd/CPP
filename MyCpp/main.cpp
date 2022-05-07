@@ -52,5 +52,10 @@ int main() {
 	// Test_STLVector();
 	// Test_STLVector1();
 	// Test_STLList();
-	Test_STLMap();
+	// Test_STLMap();
+	// Test_STLMap1();
+	// Test_STLMap2();
+	Test_STLMultimap();
+	// Test_STLStack();
+	// Test_STLQueue();
 }

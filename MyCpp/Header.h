@@ -49,3 +49,6 @@
 #include "STL/STLVector.h"
 #include "STL/STLList.h"
 #include "STL/STLMap.h"
+#include "STL/STLStack.h"
+#include "STL/STLQueue.h"
+#include "STL/STLMultiMap.h"
