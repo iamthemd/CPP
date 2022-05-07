@@ -43,7 +43,9 @@
 #include "SmartPointer/SharedPtrTest.h"
 
 // -------------- STL ------------------ //
-#include "STL/STLArray.h"
-#include "STL/STLVector.h"
 #include "STL/Pair.h"
 #include "STL/Tuple.h"
+#include "STL/STLArray.h"
+#include "STL/STLVector.h"
+#include "STL/STLList.h"
+#include "STL/STLMap.h"

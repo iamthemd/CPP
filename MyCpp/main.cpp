@@ -45,11 +45,12 @@ int main() {
 	
 	// --------------------------  STL --------------------------  //
 	// Test_Bitset();
+	// Test_Pair();
+	// Test_Tuple();
 	// Test_STLArray();
 	// Test_STLArray1();
 	// Test_STLVector();
 	// Test_STLVector1();
-	// Test_Pair();
-	Test_Tuple();
-
+	// Test_STLList();
+	Test_STLMap();
 }

@@ -192,6 +192,8 @@
     <ClInclude Include="STL\Pair.h" />
     <ClInclude Include="STL\STLArray.h" />
     <ClInclude Include="STL\STLDequeue.h" />
+    <ClInclude Include="STL\STLList.h" />
+    <ClInclude Include="STL\STLMap.h" />
     <ClInclude Include="STL\STLVector.h" />
     <ClInclude Include="STL\Tuple.h" />
   </ItemGroup>
