@@ -14,7 +14,7 @@ void Test_STLArray() {
 	std::array<int, 10> stl_array;  //std::array<int, 2> stl_array = {1,2} (initialize with bracketc++ 17)
 	for (int i = 0; i < 7; i++) {
 		stl_array[i] = i + 1;
-	}
+	}	
 
 	std::cout << "Accessing element 6 : " << stl_array[6] << std::endl;
 	std::cout << "Accessing element using at : " << stl_array.at(6) << std::endl;

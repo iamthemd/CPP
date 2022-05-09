@@ -52,3 +52,4 @@
 #include "STL/STLStack.h"
 #include "STL/STLQueue.h"
 #include "STL/STLMultiMap.h"
+#include "STL/STLSet.h"

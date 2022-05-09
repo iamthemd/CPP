@@ -11,12 +11,7 @@ Test::~Test() {
 
 template<typename T>
 SmartPtr<T>::SmartPtr(T* p) {
-	if (p == nullptr) {
-		_ptr = new T();
-	}
-	else{
 		_ptr = p;
-	}
 }
 
 template<typename T>

@@ -36,7 +36,7 @@ int main() {
 	// --------------------------  Data Structure --------------------------  //
 	// Test_SingleLinkList();
 	// Test_DoubleLinkList();
-	// Test_StaticArray();
+	 Test_StaticArray();
 
 	// --------------------------  Smart Pointer --------------------------  //
 	// Test_SmartPointer();
@@ -55,7 +55,8 @@ int main() {
 	// Test_STLMap();
 	// Test_STLMap1();
 	// Test_STLMap2();
-	Test_STLMultimap();
+	// Test_STLMultimap();
 	// Test_STLStack();
 	// Test_STLQueue();
+	// Test_STLSet();
 }

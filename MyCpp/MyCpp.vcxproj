@@ -155,7 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccessSpecifier.h" />
-    <ClInclude Include="DataStructure\array.h" />
+    <ClInclude Include="DataStructure\Array.h" />
     <ClInclude Include="DataStructure\Bitset.h" />
     <ClInclude Include="DataStructure\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\Node.h" />
@@ -196,6 +196,7 @@
     <ClInclude Include="STL\STLMap.h" />
     <ClInclude Include="STL\STLMultiMap.h" />
     <ClInclude Include="STL\STLQueue.h" />
+    <ClInclude Include="STL\STLSet.h" />
     <ClInclude Include="STL\STLStack.h" />
     <ClInclude Include="STL\STLVector.h" />
     <ClInclude Include="STL\Tuple.h" />
