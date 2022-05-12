@@ -38,11 +38,12 @@ int main() {
 	// Test_DoubleLinkList();
 	// Test_StaticArray();
 	// Test_Vector();
- 
+	Test_Tree();
+
 	// --------------------------  Type Conversion --------------------------  //
-	Test_BasseToClassConversion();
-	Test_ClassToBase();
-	Test_ClassToClass();
+	// Test_BasseToClassConversion();
+	// Test_ClassToBase();
+	// Test_ClassToClass();
 
 	// --------------------------  Smart Pointer --------------------------  //
 	// Test_SmartPointer();

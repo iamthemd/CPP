@@ -5,8 +5,14 @@ typedef struct Node {
 	Node* nextPtr;
 }Node;
 
-typedef struct DNode {
+; typedef struct DNode {
 	unsigned int val;
 	DNode* nextPtr;
 	DNode* prevPtr;
 }DNode;
+
+typedef struct TNode {
+	int val;
+	TNode* left;
+	TNode* right;
+}TNode;

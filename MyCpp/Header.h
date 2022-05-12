@@ -15,6 +15,7 @@
 #include "DataStructure/Vector.h"
 #include "DataStructure/array.h"
 #include "DataStructure/Bitset.h"
+#include "DataStructure/Tree.h"
 
 // ---------- Type Conversion --------- //
 #include "TypeConversion/BaseToClass.h"

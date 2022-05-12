@@ -142,6 +142,7 @@
     <ClCompile Include="DataStructure/LinkListClass.cpp" />
     <ClCompile Include="DataStructure\Array.cpp" />
     <ClCompile Include="DataStructure\DoubleLinkList.cpp" />
+    <ClCompile Include="DataStructure\Tree.cpp" />
     <ClCompile Include="DataStructure\Vector.cpp" />
     <ClCompile Include="SmartPointer\ExplicitConstructor.cpp" />
     <ClCompile Include="Inheritance\Inheritance.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="DataStructure\Bitset.h" />
     <ClInclude Include="DataStructure\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\Node.h" />
+    <ClInclude Include="DataStructure\Tree.h" />
     <ClInclude Include="DataStructure\Vector.h" />
     <ClInclude Include="SmartPointer\ExplicitConstructor.h" />
     <ClInclude Include="Inheritance\Inheritance.h" />
