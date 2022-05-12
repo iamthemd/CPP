@@ -1,10 +1,8 @@
 #include "Vector.h"
 
-template <typename T>
+template<typename T>
 Vector<T>::Vector() {
-	_size = 0;
-	_dArray = nullptr;
-	_capacity = 0;
+
 }
 
 template<typename T>
@@ -34,7 +32,7 @@ void Vector<T>::pop_back() {
 	}
 	else {
 		std::cout << "Element Pop_back: " << std::endl;
-		_dArray[_size];
+		_size--;
 	}
 }
 
@@ -46,16 +44,43 @@ void Vector<T>::resize(unsigned int size) {
 		while (i < _size)
 		{
 			ptr[i] = _dArray[i];
+			i++;
 		}
 		delete[] _dArray;
 		_dArray = nullptr;
 		_dArray = ptr;
 	}
+	else {
+		_dArray = new T[size];
+	}
+	_capacity = size;
 }
-
 
 template<typename T>
 Vector<T>::~Vector()
 {
 	delete [] _dArray;
+}
+
+void Test_Vector()
+{
+	Vector<int> myVec;
+	myVec.push_back(1);
+	myVec.push_back(2);
+	myVec.push_back(3);
+	myVec.push_back(4);
+	myVec.push_back(6);
+	myVec.push_back(7);
+
+	for (auto it : myVec) {
+		std::cout << it << " ";
+	}
+
+	for (auto itr = myVec.begin(); itr != myVec.end(); ++itr) {
+		std::cout << *itr << " ";
+	}
+	myVec.pop_back();
+	for (auto itr = myVec.begin(); itr != myVec.end(); itr++) {
+		std::cout << *itr << " ";
+	}
 }
