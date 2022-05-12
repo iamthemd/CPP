@@ -45,6 +45,7 @@ void StaticArray<T, _size>::swap(StaticArray<T, _size>& rhs) {
 		rhs[i]= std::move(temp);
 	}
 }
+
 void Test_StaticArray() {
 	StaticArray<int, 10> stArray, st2;
 	for (int i = 0; i < 10; i++) {
@@ -62,5 +63,10 @@ void Test_StaticArray() {
 	stArray.swap(st2);
 	for (int i = 0; i < 10; i++) {
 		std::cout << stArray[i] << " ";
+	}
+
+	std::cout << "-------------------- Test Iterator ---------------- /n";
+	for (auto itr = stArray.begin(); itr != stArray.end(); itr++) {
+		std::cout << *itr << " ";
 	}
 }
