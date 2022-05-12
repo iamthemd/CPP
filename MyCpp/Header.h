@@ -16,6 +16,11 @@
 #include "DataStructure/array.h"
 #include "DataStructure/Bitset.h"
 
+// ---------- Type Conversion --------- //
+#include "TypeConversion/BaseToClass.h"
+#include "TypeConversion/ClassToBase.h"
+#include "TypeConversion/ClassToClass.h"
+
 // ---------- Programms --------------- //
 #include "Programs/1.HelloWorld.h"
 #include "Programs/2.EnterNumber.h"

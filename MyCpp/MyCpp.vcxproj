@@ -200,6 +200,9 @@
     <ClInclude Include="STL\STLStack.h" />
     <ClInclude Include="STL\STLVector.h" />
     <ClInclude Include="STL\Tuple.h" />
+    <ClInclude Include="TypeConversion\BaseToClass.h" />
+    <ClInclude Include="TypeConversion\ClassToBase.h" />
+    <ClInclude Include="TypeConversion\ClassToClass.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="DataStructure\STL.txt" />

@@ -36,7 +36,13 @@ int main() {
 	// --------------------------  Data Structure --------------------------  //
 	// Test_SingleLinkList();
 	// Test_DoubleLinkList();
-	 Test_StaticArray();
+	// Test_StaticArray();
+	// Test_Vector();
+ 
+	// --------------------------  Type Conversion --------------------------  //
+	Test_BasseToClassConversion();
+	Test_ClassToBase();
+	Test_ClassToClass();
 
 	// --------------------------  Smart Pointer --------------------------  //
 	// Test_SmartPointer();
