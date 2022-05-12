@@ -18,6 +18,11 @@ public:
 
 	int getSizeofLinkList();
 	void printList();
+	void printList(Node* ptr);
+	void printListReverse(Node* ptr);
+	Node* getHeadPtr() {
+		return headPtr;
+	}
 private:
 	int _count;
 	Node* headPtr;

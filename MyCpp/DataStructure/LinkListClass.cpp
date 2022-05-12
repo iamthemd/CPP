@@ -157,6 +157,20 @@ void LinkListClass::printList() {
 	}
 }
 
+void LinkListClass::printList(Node* ptr) {
+	if (ptr) {
+		std::cout << ptr->val << " ";
+		printList(ptr->nextPtr);
+	}
+}
+
+void LinkListClass::printListReverse(Node* ptr) {
+	if (ptr) {
+		printListReverse(ptr->nextPtr);
+		std::cout << ptr->val << " ";
+	}
+}
+
 void Test_SingleLinkList() {
 	cout << "============== Running ===================\n";
 	LinkListClass obj;
@@ -179,5 +193,7 @@ void Test_SingleLinkList() {
 	obj.deleteNodeByNo(1);
 	obj.deleteNodeByNo(3);
 	obj.deleteNodeByNo(7);
-	obj.printList();
+	obj.printList(obj.getHeadPtr());
+	cout << "------------ Print List in reverse order -------------------\n";
+	obj.printListReverse(obj.getHeadPtr());
 }
