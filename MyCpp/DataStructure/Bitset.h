@@ -15,6 +15,7 @@ void Test_Bitset() {
 			a[i].flip();
 		}
 	}
+	
 	std::cout << "After operation on a bitset\n";
 	std::cout << a << std::endl;
 	std::cout << b << std::endl;
