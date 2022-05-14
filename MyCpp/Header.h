@@ -35,6 +35,7 @@
 #include "Programs/10.LeapYear.h"
 #include "Programs/11.Factorial.h"
 #include "Programs/12.MultiplicationTable.h"
+#include "Programs/PrintTheBit.h"
 
 // ---------- Polymorphism --------------- //
 #include "Polymorphism/FunctionOverload.h"
@@ -47,6 +48,7 @@
 #include "SmartPointer/SmartPtr.h"
 #include "SmartPointer/ExplicitConstructor.h"
 #include "SmartPointer/SharedPtrTest.h"
+#include "SmartPointer/MoveSemantic.h"
 
 // -------------- STL ------------------ //
 #include "STL/Pair.h"

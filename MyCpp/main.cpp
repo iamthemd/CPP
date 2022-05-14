@@ -1,8 +1,6 @@
 #include "Header.h"
 
-
 int main() {
-	
 	// -------------------------- Programs -------------------------- //
 	// HelloWorld();
 	// NumberEnteByUser();
@@ -16,6 +14,7 @@ int main() {
 	// IsLeapYear();
 	// Factorial();
 	// GenerateMultiplicationTable();
+	// Test_Bit();
 	
 	// TestObject();
 	// Test_Inline_Default();
@@ -38,8 +37,8 @@ int main() {
 	// Test_DoubleLinkList();
 	// Test_StaticArray();
 	// Test_Vector();
-	Test_Tree();
-
+	// Test_Tree();
+	// Test_MoveSemantic();
 	// --------------------------  Type Conversion --------------------------  //
 	// Test_BasseToClassConversion();
 	// Test_ClassToBase();
