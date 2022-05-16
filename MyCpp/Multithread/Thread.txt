@@ -1,0 +1,18 @@
+In every c++ application there is one default thread main thread(). i.e. main(). 
+In c++11 we can create addition theread by creating thread object of std::thread class.
+----------------------------------
+------------------What is thread?
+---------------------------------
+Multithreading is more like multitasking. with the help of multitasking, you can run two
+or more programs on your computer concurrently.
+There are two ways of multitasking such as process based and thread based.
+
+The process-based multitasking helps in maintaining the concurrent execution of process.
+The thread-based multitasking helps in handling the concurrent execution of piece of the
+same programs.
+
+The meaning of multithreading is that two or more threads runnig concurrently. and each 
+thread is handling a different task.It allows you to perfom many activities simultaneously.
+
+A thread is nothing but light-weight process. Each thread execute different parts of program.
+And each thread shared memory and other resources.

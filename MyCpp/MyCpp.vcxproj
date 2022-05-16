@@ -162,6 +162,7 @@
     <ClInclude Include="DataStructure\Node.h" />
     <ClInclude Include="DataStructure\Tree.h" />
     <ClInclude Include="DataStructure\Vector.h" />
+    <ClInclude Include="Multithread\1_Thread.h" />
     <ClInclude Include="Programs\PrintTheBit.h" />
     <ClInclude Include="SmartPointer\ExplicitConstructor.h" />
     <ClInclude Include="Inheritance\Inheritance.h" />
@@ -189,6 +190,7 @@
     <ClInclude Include="2.Inline.h" />
     <ClInclude Include="3.NewDelete.h" />
     <ClInclude Include="DataStructure/LinkListClass.h" />
+    <ClInclude Include="SmartPointer\LvalueRvalue.h" />
     <ClInclude Include="SmartPointer\MoveSemantic.h" />
     <ClInclude Include="SmartPointer\SharedPtrTest.h" />
     <ClInclude Include="SmartPointer\SmartPtr.h" />
@@ -210,6 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="DataStructure\STL.txt" />
+    <Text Include="Multithread\Thread.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

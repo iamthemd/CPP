@@ -49,6 +49,7 @@
 #include "SmartPointer/ExplicitConstructor.h"
 #include "SmartPointer/SharedPtrTest.h"
 #include "SmartPointer/MoveSemantic.h"
+#include "SmartPointer/LvalueRvalue.h"
 
 // -------------- STL ------------------ //
 #include "STL/Pair.h"
@@ -61,3 +62,7 @@
 #include "STL/STLQueue.h"
 #include "STL/STLMultiMap.h"
 #include "STL/STLSet.h"
+
+// -------------- Thread -------------------- //
+#include "Multithread/1_Thread.h"
+
