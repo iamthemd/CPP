@@ -165,6 +165,8 @@
     <ClInclude Include="Multithread\1_Thread.h" />
     <ClInclude Include="Multithread\2.ThreadAttachDetach.h" />
     <ClInclude Include="Multithread\3.PassingArgument.h" />
+    <ClInclude Include="Multithread\4.RaceCondition.h" />
+    <ClInclude Include="Multithread\5.EventHandling.h" />
     <ClInclude Include="Programs\PrintTheBit.h" />
     <ClInclude Include="SharedPtr.h" />
     <ClInclude Include="SmartPointer\ExplicitConstructor.h" />

@@ -67,6 +67,8 @@
 #include "Multithread/1_Thread.h"
 #include "Multithread/2.ThreadAttachDetach.h"
 #include "Multithread/3.PassingArgument.h"
+#include "Multithread/4.RaceCondition.h"
+#include "Multithread/5.EventHandling.h"
 #include "SharedPtr.h"
 
 

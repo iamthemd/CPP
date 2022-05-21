@@ -72,5 +72,7 @@ int main() {
 	// ------------------------------- Thread --------------------------------- //
 	// Test_Thread1();
 	// Test_threadAttachDetach();
-	Test_ThreadArgument();
+	// Test_ThreadArgument();
+	// Test_RaceCondition();
+	Test_EventHandling();
 }
