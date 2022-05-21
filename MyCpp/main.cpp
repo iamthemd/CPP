@@ -32,6 +32,7 @@ int main() {
 	// Test_VirtualConcept();
 	// Test_Inheritnce();
 	// Test_AccessSpecifier();
+	Test_SharedPtr();
 
 	// --------------------------  Data Structure --------------------------  //
 	// Test_SingleLinkList();
@@ -69,5 +70,7 @@ int main() {
 	// Test_STLSet();
 
 	// ------------------------------- Thread --------------------------------- //
-	Test_Thread1();
+	// Test_Thread1();
+	// Test_threadAttachDetach();
+	// Test_ThreadArgument();
 }
