@@ -2,6 +2,12 @@
 
 typedef struct Node {
 	unsigned int val;
+	Node() {
+		nextPtr = nullptr;
+	}
+	Node(int i):val(i){
+		nextPtr = nullptr;
+	}
 	Node* nextPtr;
 }Node;
 
