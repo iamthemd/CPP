@@ -167,6 +167,8 @@
     <ClInclude Include="Multithread\3.PassingArgument.h" />
     <ClInclude Include="Multithread\4.RaceCondition.h" />
     <ClInclude Include="Multithread\5.EventHandling.h" />
+    <ClInclude Include="Multithread\6.ConditionVariable.h" />
+    <ClInclude Include="Multithread\7.FuturePromise.h" />
     <ClInclude Include="Programs\PrintTheBit.h" />
     <ClInclude Include="SharedPtr.h" />
     <ClInclude Include="SmartPointer\ExplicitConstructor.h" />

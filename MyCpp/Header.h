@@ -69,6 +69,8 @@
 #include "Multithread/3.PassingArgument.h"
 #include "Multithread/4.RaceCondition.h"
 #include "Multithread/5.EventHandling.h"
+#include "Multithread/6.ConditionVariable.h"
+#include "Multithread/7.FuturePromise.h"
 #include "SharedPtr.h"
 
 

@@ -74,5 +74,7 @@ int main() {
 	// Test_threadAttachDetach();
 	// Test_ThreadArgument();
 	// Test_RaceCondition();
-	Test_EventHandling();
+	// Test_EventHandling();
+	// Test_ConditionVariable();
+	Test_FuturePromise();
 }
