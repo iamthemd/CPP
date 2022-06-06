@@ -11,7 +11,7 @@ public:
 	~BitClass(){}
 	void convertToBit() {
 		int tempVal = m_val;
-		for (int i = 0; i < size; i++) {
+		for (unsigned int i = 0; i < size; i++) {
 			int oneOrZero = tempVal & 1;
 			bitArr[size - i - 1] = oneOrZero;
 			tempVal = tempVal >> 1;
@@ -19,7 +19,7 @@ public:
 	}
 
 	void printBits() {
-		for (int i = 0; i < size; i++) {
+		for (unsigned int i = 0; i < size; i++) {
 			std::cout << bitArr[i] << " ";
 		}
 		std::cout << std::endl;
