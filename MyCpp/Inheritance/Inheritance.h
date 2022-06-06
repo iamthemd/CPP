@@ -1,16 +1,23 @@
 #pragma once
+#include <iostream>
+
 namespace Inheritance{
 
 class Base{
 public:
 	Base();
 	~Base();
+
+private:
+	void foo() { std::cout << "Private Method of Base::foo()\n"; }
 };
 
 class Derive {
 public:
 	Derive();
 	~Derive();
+private:
+	void foo1() { std::cout << "Private Method of Derive::foo1()\n"; }
 };
 
 class Single : public Base {	// Single Inheritance 

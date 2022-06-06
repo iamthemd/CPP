@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Inheritance.h"
-using namespace Inheritance;
+namespace Inheritance{
 
 Base::Base() {
 	std::cout << "Base Class Constructor\n";
@@ -62,7 +62,7 @@ Hybrid::~Hybrid()
 	std::cout << "In Hybrid Destructor\n";
 }
 
-
+}
 void Test_Inheritnce() {
 	// Base Class Constructor first called then Derive class constructor called.
 	// In Destructor case first derive class destructor destruct then base class destructor
@@ -75,7 +75,7 @@ void Test_Inheritnce() {
 	// To resolve or avoid tow copy of base class we need to inherit base class as virtual
 	// for both single and single1
 	// for ex: class single: virtual public Base{}; class single1: virtual public Base{};
-	Hybrid h;
+	Inheritance::Hybrid h;
 }
 
 

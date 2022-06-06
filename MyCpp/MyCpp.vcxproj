@@ -156,12 +156,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AccessSpecifier.h" />
+    <ClInclude Include="DataStructure\Algorithms.h" />
     <ClInclude Include="DataStructure\Array.h" />
     <ClInclude Include="DataStructure\Bitset.h" />
     <ClInclude Include="DataStructure\DoubleLinkList.h" />
     <ClInclude Include="DataStructure\Node.h" />
+    <ClInclude Include="DataStructure\QueueUsingStack.h" />
     <ClInclude Include="DataStructure\Tree.h" />
     <ClInclude Include="DataStructure\Vector.h" />
+    <ClInclude Include="HackerRank\Test1.h" />
     <ClInclude Include="Multithread\1_Thread.h" />
     <ClInclude Include="Multithread\2.ThreadAttachDetach.h" />
     <ClInclude Include="Multithread\3.PassingArgument.h" />
@@ -170,6 +173,8 @@
     <ClInclude Include="Multithread\6.ConditionVariable.h" />
     <ClInclude Include="Multithread\7.FuturePromise.h" />
     <ClInclude Include="Programs\PrintTheBit.h" />
+    <ClInclude Include="Programs\SortedRoutedrray.h" />
+    <ClInclude Include="Rough.h" />
     <ClInclude Include="SharedPtr.h" />
     <ClInclude Include="SmartPointer\ExplicitConstructor.h" />
     <ClInclude Include="Inheritance\Inheritance.h" />
@@ -199,6 +204,8 @@
     <ClInclude Include="DataStructure/LinkListClass.h" />
     <ClInclude Include="SmartPointer\LvalueRvalue.h" />
     <ClInclude Include="SmartPointer\MoveSemantic.h" />
+    <ClInclude Include="SmartPointer\PreDefineCast.h" />
+    <ClInclude Include="SmartPointer\PreDefinSmartPtr.h" />
     <ClInclude Include="SmartPointer\SharedPtrTest.h" />
     <ClInclude Include="SmartPointer\SmartPtr.h" />
     <ClInclude Include="static.h" />
