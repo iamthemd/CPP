@@ -3,8 +3,10 @@
 using namespace std;
 
 /*
-* - Constructor is a special membere function whose task is to intiialise the object of its class.
-* - It is a special  member funtion becase name is the same as class name and it doesn't have retur type.
+* - Constructor is a special membere function whose task is to intiialise the object of 
+*   its class.
+* - It is a special  member funtion becase name is the same as class name and 
+*   it doesn't have retur type.
 * - Constructor is invoked whenver object of associated class is being created.
 * - It doesn't require external invokation like normal function.
 * - If programmer provide constructor externally compiler dropeed default constructor.
