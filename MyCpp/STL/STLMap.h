@@ -11,6 +11,8 @@
 void Test_STLMap() {
 	std::map<int, std::string> map_IS;
 	map_IS[1] = "I";
+	map_IS[1] = "YOU";
+
 	map_IS[3] = "ME";
 
 	std::cout << "----------------- Print the Map key value -----------------\n";
