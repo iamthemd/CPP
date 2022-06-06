@@ -86,7 +86,7 @@ public:
 SharedPtr<Resource> func(SharedPtr<Resource> temp) {
 	return temp;
 }
-void Test_SharedPtr() {
+void Test_SharedPtrM() {
 	Resource* ptr = new Resource();
 	SharedPtr<Resource> sharedPtrObj(ptr);
 	{

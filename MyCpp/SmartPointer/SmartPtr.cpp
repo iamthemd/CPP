@@ -44,13 +44,13 @@ std::unique_ptr<Test> Passout() {
 }
 
 void Test_SmartPointer() {
-	SmartPtr<int> i;
+	/*SmartPtr<int> i;
 	*i = 90;
 	std::cout << *i << std::endl;
 
 	SmartPtr<Test> TestPtr(new Test());
 	TestPtr->a = 91;
-	std::cout << TestPtr->a << std::endl;
+	std::cout << TestPtr->a << std::endl;*/
 
 	// ---------------------- unique_ptr ------------------------------ //
 	// One copy of object exists only

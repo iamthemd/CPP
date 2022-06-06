@@ -36,5 +36,15 @@ void Test_SharedPtrCyclicDependancy() {
 
 		std::cout << ASharedPtr.use_count() << std::endl;
 		std::cout << BSharedPtr.use_count() << std::endl;
+
+		ASharedPtr->~ClassA();
+		BSharedPtr->~ClassB();
+		std::cout << ASharedPtr.use_count() << std::endl;
+		std::cout << BSharedPtr.use_count() << std::endl;
+
+		/*ASharedPtr->~ClassA();
+		BSharedPtr->~ClassB();
+		std::cout << ASharedPtr.use_count() << std::endl;
+		std::cout << BSharedPtr.use_count() << std::endl;*/
 	}
 }
