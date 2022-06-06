@@ -17,12 +17,12 @@ protected:
 	int z;
 };
 
-// publc inheritance: public member become public, protected become preotected and private become private
+// publc inheritance: public member become public, protected become preotected
 class PublicDeriveClass: public AccessSpecifierClass {
 public: 
 	void printInPublicDeriveClass() {
 		x = 12;
-		//y = 23; can't access from outside fuction.
+		//y = 23; can't access from outside class.
 		z = 45;
 		std::cout << "X:" << x << "Z:" << z << std::endl;
 	}
@@ -39,7 +39,7 @@ public:
 	}
 };
 
-// private inheritance: public member become private, protected become private and private become private
+// private inheritance: public member become private, protected become private 
 class PrivateDeriveClass : private AccessSpecifierClass {
 public:
 	void printInPrivateDeriveClass() {
@@ -54,6 +54,7 @@ public:
 void Test_AccessSpecifier() {
 	PublicDeriveClass pubdc; // x is accessible
 	pubdc.printInPublicDeriveClass();
+	pubdc.x;
 	ProtectedDeriveClass prodc; // x is not accessible because it became protected.
 	prodc.printInProtectedDeriveClass();
 	PrivateDeriveClass pridc; // x is not accessible because it became private
