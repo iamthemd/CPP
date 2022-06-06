@@ -7,7 +7,6 @@ template<class T>
 class Vector
 {
 public:
-
 	struct Iterator {
 		Iterator(T* ptr):m_ptr(ptr){}
 

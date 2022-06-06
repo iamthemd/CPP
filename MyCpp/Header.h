@@ -1,5 +1,4 @@
 #pragma once
-
 #include "1.object.h"
 #include "2.Inline.h"
 #include "3.NewDelete.h"
@@ -16,6 +15,8 @@
 #include "DataStructure/array.h"
 #include "DataStructure/Bitset.h"
 #include "DataStructure/Tree.h"
+#include "DataStructure/Algorithms.h"
+#include "DataStructure/QueueUsingStack.h"
 
 // ---------- Type Conversion --------- //
 #include "TypeConversion/BaseToClass.h"
@@ -50,6 +51,8 @@
 #include "SmartPointer/SharedPtrTest.h"
 #include "SmartPointer/MoveSemantic.h"
 #include "SmartPointer/LvalueRvalue.h"
+#include "SmartPointer/PreDefineCast.h"
+#include "SmartPointer/PreDefinSmartPtr.h"
 
 // -------------- STL ------------------ //
 #include "STL/Pair.h"
@@ -73,4 +76,5 @@
 #include "Multithread/7.FuturePromise.h"
 #include "SharedPtr.h"
 
-
+// ---------------- HackerRank ------------------- //
+#include "HackerRank/Test1.h"
