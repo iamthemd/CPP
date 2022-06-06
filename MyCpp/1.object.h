@@ -37,9 +37,11 @@ int x = 100;
 
 /*
 * MUTABLE: mutable is keyword.
-*	A class object or structure variable may be declare as constant. this making their datamember donot modifiable.
-*	However a situation arise where we want to create a constant object but we would like to modified particular
-*	datameber, in such situation we can make the particular data item modifiable by declaring the item as mutable.
+*  A class object or structure variable may be declare as constant.
+*  This making their datamember donot modifiable.
+*  However a situation arise where we want to create a constant object
+*  but we would like to modified particular datameber, in such situation 
+*  we can make the particular data item modifiable by declaring the item as mutable.
 */
 struct A {
 	mutable int intA; // we can modify the intA eventhough object is being taken as constant.
