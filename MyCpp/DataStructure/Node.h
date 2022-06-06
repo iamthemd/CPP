@@ -17,8 +17,9 @@ typedef struct Node {
 	DNode* prevPtr;
 }DNode;
 
-typedef struct TNode {
-	int val;
+template<typename Type>
+struct TNode {
+	Type val;
 	TNode* left;
 	TNode* right;
-}TNode;
+};

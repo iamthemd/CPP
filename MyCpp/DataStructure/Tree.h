@@ -4,14 +4,14 @@
 
 
 class Tree {
-	TNode* m_root;
+	TNode<int>* m_root;
 public:
 	Tree();
 	void insertNode(int);
-	void printInOrder(TNode*);
-	void printPreOrder(TNode*);
-	void printPostOrder(TNode*);
-	TNode* getRootPtr() {
+	void printInOrder(TNode<int>*);
+	void printPreOrder(TNode<int>*);
+	void printPostOrder(TNode<int>*);
+	TNode<int>* getRootPtr() {
 		return m_root;
 	}
 };

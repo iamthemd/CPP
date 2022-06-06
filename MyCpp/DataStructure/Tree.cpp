@@ -5,7 +5,7 @@ Tree::Tree() {
 }
 
 void Tree::insertNode(int val) {
-	TNode* ptr = new TNode();
+	TNode<int>* ptr = new TNode<int>();
 	ptr->left = nullptr;
 	ptr->right = nullptr;
 	ptr->val = val;
@@ -14,8 +14,8 @@ void Tree::insertNode(int val) {
 		m_root = ptr;
 	}
 	else {
-		TNode* temp = m_root;
-		TNode* parent = nullptr;
+		TNode<int>* temp = m_root;
+		TNode<int>* parent = nullptr;
 		while (temp != nullptr) {
 			parent = temp;
 			if (val < temp->val) {
@@ -30,12 +30,11 @@ void Tree::insertNode(int val) {
 		}
 		else {
 			parent->right = ptr;
-
 		}
 	}
 }
 
-void Tree::printInOrder(TNode* ptr)
+void Tree::printInOrder(TNode<int>* ptr)
 {
 	if (ptr) {
 		printInOrder(ptr->left);
@@ -44,7 +43,7 @@ void Tree::printInOrder(TNode* ptr)
 	}
 }
 
-void Tree::printPreOrder(TNode* ptr)
+void Tree::printPreOrder(TNode<int>* ptr)
 {
 	if (ptr) {
 		std::cout << ptr->val << " ";
@@ -53,7 +52,7 @@ void Tree::printPreOrder(TNode* ptr)
 	}
 }
 
-void Tree::printPostOrder(TNode* ptr)
+void Tree::printPostOrder(TNode<int>* ptr)
 {
 	if (ptr) {
 		printPostOrder(ptr->left);
